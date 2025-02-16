@@ -124,7 +124,7 @@ body {
 }
 
 .highlight {
-    color: #008080;
+    color: #ee777f;
     text-decoration: none;
     font-weight: 700;
 }
@@ -152,7 +152,7 @@ body {
 }
 
 .post-title {
-    color: #008080;
+    color: #ee777f;
     text-decoration: none;
     font-weight: 700;
 }
@@ -285,4 +285,17 @@ footer {
 
 .article-body a:hover {
     text-decoration: underline;
+}
+
+/* Style for unordered list */
+ul {
+    list-style-type: disc; /* Use disc bullets */
+    padding-left: 20px; /* Add some padding to align bullets */
+    margin-bottom: 1rem; /* Add space below the list */
+}
+
+/* Style for list items */
+li {
+    margin-bottom: 0.5rem; /* Add space between list items */
+    font-weight: 400; /* Ensure consistent font weight */
 } 
