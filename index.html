@@ -14,40 +14,32 @@
     <div class="container">
         <header class="site-header">
             <div class="header-content">
-                <div class="avatar-container">
+                <a href="/" class="avatar-container">
                     <img src="assets/pic_hover.png" alt="" class="avatar">
                     <img src="assets/pic.png" alt="" class="avatar-hover">
-                </div>
-                <div class="author-name" style="letter-spacing: 0.1em;">Ronnie Noche</div>
+                </a>
+                <a href="/" class="author-name" style="letter-spacing: 0.1em;">Ronnie Noche</a>
                 <div class="social-links">
-                  <a href="https://github.com/ronnoche" class="social-link" target="_blank" >
-                      <img src="assets/github.svg" alt="GitHub">
-                  </a>
-                  <a href="https://threads.net/ronnoche" class="social-link" target="_blank">
-                      <img src="assets/threads.svg" alt="Threads">
-                  </a>
-                  <a href="https://twitter.com/ronnoche" class="social-link" target="_blank">
-                      <img src="assets/twitter.svg" alt="Twitter"> 
-                  </a>
-                  <a href="https://linkedin.com/in/ronnoche" class="social-link" target="_blank">
-                      <img src="assets/linkedin.svg" alt="LinkedIn">
-                  </a>
+                    <a href="https://github.com/ronnoche" class="social-link" target="_blank" >
+                        <img src="assets/github.svg" alt="GitHub"> </a>
+                    <a href="https://threads.net/ronnoche" class="social-link" target="_blank">
+                        <img src="assets/threads.svg" alt="Threads"> </a>
+                    <a href="https://twitter.com/ronnoche" class="social-link" target="_blank">
+                        <img src="assets/twitter.svg" alt="Twitter">  </a>
+                    <a href="https://linkedin.com/in/ronnoche" class="social-link" target="_blank">
+                        <img src="assets/linkedin.svg" alt="LinkedIn"> </a>
                 </div>
             </div>
-        </header>
+        </header>                  
 
         <main>
             <section class="intro">
                 <p>Hi there!</p>
                 <p>I'm Ron, a lifelong learner passionate about both people and technology.</p>
                 <p>I focus on building software, creating processes, and striving to become a better version of myself—while hopefully helping others along the way. Currently, I serve as the founding product manager and software engineer at 
-                    <a href="https://www.narralabs.com/" target="_blank" class="highlight">NarraLabs</a>.
-                </p>
-                <p>
-                    Outside of work, I actively help individuals make career shifts into tech industry. 
-                </p>
+                    <a href="https://www.narralabs.com/" target="_blank" class="highlight">NarraLabs</a>. </p>
+                <p> Outside of work, I actively help individuals make career shifts into tech industry. </p>
                 <p>Before diving into tech, I worked in various roles across education and counseling, including teaching philosophy and social sciences, as well as providing psychological support and career guidance. I also delivered talks and workshops focused on personal development, mental health, and design thinking.</p>
-                
             </section>            
 
             <section class="projects">
@@ -62,62 +54,18 @@
                 </p>
             </section>
                 
-            
             <section class="blog-posts">
                 <h4>Thoughts expressed as articles:</h4>
-                <article class="post-item">
-                    <div class="post-header">
-                        <a href="https://ronnoche.github.io/ronnoche/posts/2020/journey-inward.html" class="post-title">Journey Inward</a>
-                        <span class="post-date">October 15, 2020</span>
-                    </div>
-                    <div class="post-meta-info">
-                        <div class="post-tags">
-                            <span class="post-tag">Psychology</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="post-item">
-                    <div class="post-header">
-                        <a href="https://ronnoche.github.io/ronnoche/posts/2020/idea-of-death.html" class="post-title">The Idea of Death</a>
-                        <span class="post-date">September 14, 2020</span>
-                    </div>
-                    <div class="post-meta-info">
-                        <div class="post-tags">
-                            <span class="post-tag">Philosophy</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="post-item">
-                    <div class="post-header">
-                        <a href="https://ronnoche.github.io/ronnoche/posts/2020/stocism-more-than-philosophy.html" class="post-title">Stoicism: More than Philosophy</a>
-                        <span class="post-date">June 17, 2020</span>
-                    </div>
-                    <div class="post-meta-info">
-                        <div class="post-tags">
-                            <span class="post-tag">Philosophy</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="post-item">
-                    <div class="post-header">
-                        <a href="https://ronnoche.github.io/ronnoche/posts/2020/reinventing-self.html" class="post-title">Reinventing Self</a>
-                        <span class="post-date">May 31, 2020</span>
-                    </div>
-                    <div class="post-meta-info">
-                        <div class="post-tags">
-                            <span class="post-tag">Philosophy</span>
-                        </div>
-                    </div>
-                </article>
+                <div id="post-list"></div>
             </section>
-        </main>
 
-        <footer>
-            <p>&copy; <script>document.write(new Date().getFullYear())</script> ronnoche. All rights reserved.</p>
-        </footer>
+            <footer>
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> ronnoche. All rights reserved.</p>
+            </footer>
+                
+            <script src="script.js"></script>
+            
+        </main>
     </div>
 </body>
 </html> 
