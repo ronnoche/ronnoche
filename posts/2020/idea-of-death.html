@@ -8,35 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <div class="container">
-        <!-- Shared Header -->
-        <header class="site-header">
-            <div class="header-content">
-                <a href="../../index.html" class="avatar-container">
-                    <img src="../../assets/pic_hover.png" alt="" class="avatar">
-                    <img src="../../assets/pic.png" alt="" class="avatar-hover">
-                </a>
-                <div class="author-name" style="letter-spacing: 0.1em;">Ronnie Noche</div>
-                <div class="social-links">
-                    <a href="https://github.com/ronnoche" class="social-link" target="_blank">
-                        <img src="../../assets/github.svg" alt="GitHub">
-                    </a>
-                    <a href="https://threads.net/ronnoche" class="social-link" target="_blank">
-                        <img src="../../assets/threads.svg" alt="Threads">
-                    </a>
-                    <a href="https://twitter.com/ronnoche" class="social-link" target="_blank">
-                        <img src="../../assets/twitter.svg" alt="Twitter">
-                    </a>
-                    <a href="https://linkedin.com/in/ronnoche" class="social-link" target="_blank">
-                        <img src="../../assets/linkedin.svg" alt="LinkedIn">
-                    </a>
-                </div>
-            </div>
-        </header>
-
+        <div id="header-container"></div>
         <main class="post-content">
             <article>
                 <header class="article-header">
@@ -63,9 +39,24 @@
             </article>
         </main>
 
-        <footer>
-            <p>&copy; <script>document.write(new Date().getFullYear())</script> ronnoche. All rights reserved.</p>
-        </footer>
+        <div id="footer-placeholder"></div>
     </div>
+    <script>
+        console.log("Hello")
+        // Load header
+        fetch('../../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('../../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="../../script.js"></script>
 </body>
 </html> 

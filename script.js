@@ -1,55 +1,36 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    });
-});
+console.log(":wave:\nHi,\nSay hi, @ronnoche!")
 
-// Form submission handling
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(this);
-        const formProps = Object.fromEntries(formData);
-        
-        // You would typically send this to a server
-        console.log('Form submitted:', formProps);
-        
-        // Show success message
-        alert('Thanks for your message! I\'ll get back to you soon.');
-        
-        // Reset form
-        this.reset();
-    });
-}
+fetch('/posts.json')
+    .then(response => response.json())
+    .then(posts => {
+        // Sort posts by date (latest first)
+        posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-// Animate project cards on scroll
-const projectCards = document.querySelectorAll('.project-card');
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
+        // Get the latest 10 posts
+        const latestPosts = posts.slice(0, 10);
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = 1;
-            entry.target.style.transform = 'translateY(0)';
+        // Render the list
+        const postList = document.getElementById("post-list");
+
+        if (postList) {
+            latestPosts.forEach(post => {
+                const article = document.createElement("article");
+                article.classList.add("post-item");
+
+                article.innerHTML = `
+                    <div class="post-header">
+                        <a href="${post.url}" class="post-title">${post.title}</a>
+                        <span class="post-date">${new Date(post.date).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                    </div>
+                    <div class="post-meta-info">
+                        <div class="post-tags">
+                            ${post.tags.map(tag => `<span class="post-tag">${tag}</span>`).join("")}
+                        </div>
+                    </div>
+                `;
+
+                postList.appendChild(article);
+            });
         }
-    });
-}, observerOptions);
-
-projectCards.forEach(card => {
-    card.style.opacity = 0;
-    card.style.transform = 'translateY(20px)';
-    card.style.transition = 'all 0.5s ease-out';
-    observer.observe(card);
-}); 
+    })
+    .catch(error => console.error('Error fetching posts:', error));
