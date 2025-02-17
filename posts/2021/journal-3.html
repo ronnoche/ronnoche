@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal 3 | Ron</title>
+    <link rel="icon" type="image/png" href="../../assets/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header-container"></div>
+        <main class="post-content">
+            <article>
+                <header class="article-header">
+                    <h1>Journal 3: work looks different</h1>
+                    <div class="article-meta">
+                        <time>March 18, 2021</time>
+                        <div class="post-tags">
+                            <span class="post-tag">Journal</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="article-body">
+                    <p>
+                        Sometimes work is frustrating.  
+                        No results? I remind myself to start moving.  
+                        Bad results? I pause and check what's not working.  
+                        Great results? I celebrate — I worked for this.
+                    </p>
+
+                    <p>
+                        I'm learning that what <em>works</em> look different for everyone.  
+                        Some people work best after rest.  
+                        Some after a detailed plan.  
+                        Others figure it out by trial and error.  
+                        And some need to talk it out with others before finding clarity.
+                    </p>
+
+                    <p>
+                        I used to think consistency was the ultimate key to success.  
+                        But I'm not a machine — I'm human.  
+                        I get tired. I need breaks. My rhythm changes.
+                    </p>
+
+                    <p>
+                        What matters more than consistency is understanding how I work best.  
+                        Finding my process — my pace — my way.
+                    </p>
+
+                    <p>
+                        That's the key.
+                    </p>
+                </div>
+            </article>
+        </main>
+
+        <div id="footer-placeholder"></div>
+    </div>
+    <script>
+        // Load header
+        fetch('../../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('../../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="../../script.js"></script>
+</body>
+</html>

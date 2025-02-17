@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Journal 5 | Ron</title>
+    <link rel="icon" type="image/png" href="../../assets/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header-container"></div>
+        <main class="post-content">
+            <article>
+                <header class="article-header">
+                    <h1> Journal 5: denial of reality </h1>
+                    <div class="article-meta">
+                        <time>May 9, 2021</time>
+                        <div class="post-tags">
+                            <span class="post-tag">Journal</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="article-body">
+                    <p>
+                        It is exhausting to hope.  
+                        To look forward.  
+                        To believe that tomorrow will be better while the world constantly shows me otherwise.
+                    </p>
+
+                    <p>
+                        I cling to faith, but at times, even faith feels like an escape — a shield painted with positivity to avoid the sharpness of reality.
+                    </p>
+
+                    <p>
+                        But faith was never meant to blind me.  
+                        It was never meant to pull me away from the present.  
+                        Faith is not the denial of reality; it is the strength to stand in it.
+                    </p>
+
+                    <p>
+                        To believe while my feet remain grounded in the present.  
+                        To see the world as it is and still choose to walk forward.
+                    </p>
+
+                    <p>
+                        Faith is not always about waiting for what will be.  
+                        Sometimes, it is finding the courage to live fully with what is.
+                    </p>
+
+                    <p>
+                        Here.  
+                        Now.
+                    </p>
+
+                </div>
+            </article>
+        </main>
+
+        <div id="footer-placeholder"></div>
+    </div>
+    <script>
+        // Load header
+        fetch('../../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('../../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="../../script.js"></script>
+</body>
+</html>
