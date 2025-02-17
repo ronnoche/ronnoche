@@ -1,5 +1,11 @@
 [
     {
+        "title": "Journal 17: Everyone has something",
+        "url": "posts/2022/journal-17.html",
+        "date": "2022-10-18",
+        "tags": ["Journal"]
+    },
+    {
         "title": "Journal 14: right now",
         "url": "posts/2022/journal-14.html",
         "date": "2022-08-19",
@@ -12,9 +18,21 @@
         "tags": ["Journal"]
     },
     {
+        "title": "Book Review: Deep Work",
+        "url": "posts/2022/book-2.html",
+        "date": "2022-05-25",
+        "tags": ["Book"]
+    },
+    {
+        "title": "Journal 10: easier to be me",
+        "url": "posts/2022/journal-10.html",
+        "date": "2022-03-27",
+        "tags": ["Journal"]
+    },
+    {
         "title": "Journal 9: meaninglessness",
         "url": "posts/2022/journal-9.html",
-        "date": "2022-05-25",
+        "date": "2022-01-01",
         "tags": ["Journal"]
     },
     {
@@ -25,9 +43,9 @@
     },
     {
         "title": "Book Review: Atomic Habits",
-        "url": "posts/2021/book-review-atomic-habits.html",
+        "url": "posts/2021/book-1.html",
         "date": "2021-11-17",
-        "tags": ["Book Review"]
+        "tags": ["Book"]
     },
     {
         "title": "Journal 7: That is enough",
