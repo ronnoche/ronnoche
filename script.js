@@ -52,7 +52,7 @@ function updatePaginationInfo() {
 
     // Enable/disable pagination buttons
     document.getElementById('prev-page').style.display = currentPage === 1 ? 'none' : 'inline-block';
-    document.getElementById('next-page').disabled = currentPage === totalPages;
+    document.getElementById('next-page').style.display = currentPage === totalPages ? 'none' : 'inline-block';
 }
 
 // Function to render tag filters
