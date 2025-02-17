@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Review: Ikigai | Ron</title>
+    <link rel="icon" type="image/png" href="../../assets/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header-container"></div>
+        <main class="post-content">
+            <article>
+                <header class="article-header">
+                    <h1>Book Review: Ikigai</h1>
+                    <div class="article-meta">
+                        <time>September 10, 2022</time>
+                        <div class="post-tags">
+                            <span class="post-tag">Book</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="article-body">
+                    <p>
+                        <strong>Should you read Ikigai by Héctor García and Francesc Miralles?</strong>  
+                        Yes, but with the right expectations.  
+                        This book focuses more on the <em>ikigai lifestyle</em> than helping you directly find your ikigai (your reason for being). If you're searching for a guide to discovering your ikigai, this might not be the first book to pick up.  
+                        However, if you are interested in <em>living with intention, longevity, and balance</em>, this book offers a lot of practical wisdom.
+                    </p>
+
+                    <p>
+                        What stood out to me is its emphasis on everyday practices:  
+                        mindful eating (the 80% rule), daily movement (walking, gardening, yoga, tai chi), connecting with nature, valuing community, and staying present.
+                    </p>
+
+                    <p>
+                        The book also details a case study of Okinawa, Japan — a community known for having the world's highest life expectancy. Their way of life is deeply connected to ikigai: purposeful work, close friendships, and simple living.
+                    </p>
+
+                    <p>
+                        Personally, I appreciated the book's exploration of ideas like logotherapy, flow, deep work, stoicism, mindfulness, and minimalism — concepts that resonate with me.
+                    </p>
+
+                    <h3>10 Rules of Ikigai (Lifestyle):</h3>
+                    <ol>
+                        <li>Stay active; don't retire. Master your craft.</li>
+                        <li>Take it slow. Appreciate time and life.</li>
+                        <li>Don't fill your stomach. Follow the 80% rule.</li>
+                        <li>Surround yourself with good friends. Be intentional about relationships.</li>
+                        <li>Get in shape for your next birthday. Move your body every day.</li>
+                        <li>Smile. Stay cheerful. Humor is medicine.</li>
+                        <li>Reconnect with nature. Spend time outside.</li>
+                        <li>Give thanks. Practice gratitude daily.</li>
+                        <li>Live in the moment. Be present.</li>
+                        <li>Follow your ikigai — your reason for being.</li>
+                    </ol>
+
+                    <p>
+                        <strong>Final Thoughts:</strong>  
+                        Ikigai is a light, enjoyable read filled with reminders to slow down and align life with what truly matters.  
+                        It's not a manual to find your purpose, but it is a gentle nudge toward a more intentional, fulfilling life.
+                    </p>
+                </div>
+            </article>
+        </main>
+
+        <div id="footer-placeholder"></div>
+    </div>
+    <script>
+        // Load header
+        fetch('../../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('../../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="../../script.js"></script>
+</body>
+</html>

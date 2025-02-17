@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocacy 1 | Ron</title>
+    <link rel="icon" type="image/png" href="../../assets/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header-container"></div>
+        <main class="post-content">
+            <article>
+                <header class="article-header">
+                    <h1>Stress pt.1: "I don't know what I'm doing."</h1>
+                    <div class="article-meta">
+                        <time>Jan 11, 2023</time>
+                        <div class="post-tags">
+                            <span class="post-tag">Advocacy</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="article-body">
+                    <p>
+                        Burnout and work-related stress are increasingly common. Over the past year, I've had conversations with people feeling exhausted from work or studies. Their stories reflect a struggle many of us share.
+                    </p>
+
+                    <p>
+                        Why are we always so tired?  
+                        Based on my learning from the <em>Science of Well-being</em> course and personal observations, one common cause is <em>uncertainty about what to do</em>.
+                    </p>
+
+                    <h3>“I don't know what I'm doing.”</h3>
+
+                    <p>
+                        When we're unsure about the steps to take, we tend to overthink. This overthinking drains our mental energy and can lead to anxiety.  
+                        Often, it triggers procrastination, followed by guilt and self-blame—trapping us in a cycle that leads to burnout.
+                    </p>
+
+                    <h3>Common Examples:</h3>
+                    <ul>
+                        <li>You have a long to-do list and don't know where to start → You freeze → You procrastinate.</li>
+                        <li>You're assigned a task but don't know how to begin → You delay → You feel guilty → You freeze → You procrastinate.</li>
+                    </ul>
+
+                    <h3>The Cycle:</h3>
+                    <p>Overthinking → Procrastination → Self-blame → Burnout.</p>
+
+                    <h3>What Can We Do?</h3>
+                    <p>
+                        Take action.  
+                        Start — even if it's messy. Confront the task. Progress, not perfection, is key.  
+                        As cliché as it sounds, sometimes the best way out is through.
+                    </p>
+
+                    <p>
+                        Stress from unfinished work often lingers until the task is done.  
+                        So, start. Take small steps.  
+                        <em>Finish it, even if it's imperfect.</em>
+                    </p>
+
+                    <hr style="margin: 3rem 0; border: 0.8px dashed #ddd;">
+
+                    <p style="font-size: 0.7rem;"><em>P.S. This post is for educational purposes only. If you are experiencing mental health concerns, please consult a professional near you.</em></p>
+                </div>
+            </article>
+        </main>
+
+        <div id="footer-placeholder"></div>
+    </div>
+    <script>
+        // Load header
+        fetch('../../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('../../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="../../script.js"></script>
+</body>
+</html>

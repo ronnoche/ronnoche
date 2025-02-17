@@ -1,68 +1,98 @@
 [
     {
-        "title": "Journal 17: Everyone has something",
-        "url": "posts/2022/journal-17.html",
-        "date": "2022-10-18",
-        "tags": ["Journal"]
+        "title": "Stress pt2: 'I don't like what I'm doing'",
+        "url": "posts/2023/advocacy-stress-pt-2.html",
+        "date": "2023-01-18",
+        "tags": ["#Advocacy"]
     },
     {
-        "title": "Journal 14: right now",
+        "title": "Stress pt1: 'I don't know what I'm doing'",
+        "url": "posts/2023/advocacy-stress-pt-1.html",
+        "date": "2023-01-11",
+        "tags": ["#Advocacy"]
+    },
+    {
+        "title": "Journal 17: everyone has something",
+        "url": "posts/2022/journal-17.html",
+        "date": "2022-10-18",
+        "tags": ["#Journal"]
+    },
+    {
+        "title": "Journal 14: what truly matters right now?",
         "url": "posts/2022/journal-14.html",
         "date": "2022-08-19",
-        "tags": ["Journal"]
+        "tags": ["#Journal"]
+    },
+    {
+        "title": "Book Review: Ikigai",
+        "url": "posts/2022/book-ikigai.html",
+        "date": "2022-09-10",
+        "tags": ["#Review"]
     },
     {
         "title": "Journal 13: equal in Death's eyes",
         "url": "posts/2022/journal-13.html",
         "date": "2022-07-02",
-        "tags": ["Journal"]
+        "tags": ["#Journal"]
     },
     {
         "title": "Book Review: Deep Work",
-        "url": "posts/2022/book-2.html",
+        "url": "posts/2022/book-deep-work.html",
         "date": "2022-05-25",
-        "tags": ["Book"]
+        "tags": ["#Review"]
     },
     {
         "title": "Journal 10: easier to be me",
         "url": "posts/2022/journal-10.html",
         "date": "2022-03-27",
-        "tags": ["Journal"]
+        "tags": ["#Journal"]
     },
     {
-        "title": "Journal 9: meaninglessness",
+        "title": "Journal 9: meaninglessness of universe",
         "url": "posts/2022/journal-9.html",
         "date": "2022-01-01",
-        "tags": ["Journal"]
+        "tags": ["#Journal"]
     },
     {
         "title": "Journal 8: what if it were simple?",
         "url": "posts/2021/journal-8.html",
         "date": "2021-12-29",
-        "tags": ["Journal"]
+        "tags": ["#Journal"]
     },
     {
         "title": "Book Review: Atomic Habits",
-        "url": "posts/2021/book-1.html",
+        "url": "posts/2021/book-atomic-habits.html",
         "date": "2021-11-17",
-        "tags": ["Book"]
+        "tags": ["#Review"]
     },
     {
-        "title": "Journal 7: That is enough",
+        "title": "Journal 7: once an achiever",
         "url": "posts/2021/journal-7.html",
         "date": "2021-10-10",
-        "tags": ["Journal"]
+        "tags": ["#Journal"]
     },
     {
-        "title": "Journal 6: it is fine",
+        "title": "Journal 6: i'm not slow; i'm in a hurry",
         "url": "posts/2021/journal-6.html",
         "date": "2021-07-3",
-        "tags": ["Journal"]
+        "tags": ["#Journal"]
     },
     {
-        "title": "Journal 4: I am not the same as I was",
+        "title": "Journal 5: faith was never meant to blind me",
+        "url": "posts/2021/journal-5.html",
+        "date": "2021-05-09",
+        "tags": ["#Journal"]
+    },
+    {
+        "title": "Journal 4: i am not the same as i was",
         "url": "posts/2021/journal-4.html",
         "date": "2021-04-17",
-        "tags": ["Journal"]
+        "tags": ["#Journal"]
+    },
+    {
+        "title": "Journal 3: works look different",
+        "url": "posts/2021/journal-3.html",
+        "date": "2021-03-18",
+        "tags": ["#Journal"]
     }
 ]
