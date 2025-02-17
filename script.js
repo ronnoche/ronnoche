@@ -1,8 +1,8 @@
-console.log(":wave:\nHi,\nSay hi, @ronnoche!")
+console.log(":wave:\nSay hi, @ronnoche!")
 
 // Global state
 let currentPage = 1;
-const postsPerPage = 5;
+const postsPerPage = 20;
 let allPosts = [];
 let filteredPosts = [];
 let selectedTags = new Set();
@@ -16,8 +16,8 @@ function renderPosts() {
     postList.innerHTML = '';
 
     // Calculate pagination
-    const startIndex = (currentPage - 1) * 12; // Show max of 10 articles
-    const endIndex = startIndex + 12;
+    const startIndex = (currentPage - 1) * postsPerPage;
+    const endIndex = startIndex + postsPerPage;
     const postsToShow = filteredPosts.slice(startIndex, endIndex);
 
     // Render posts
@@ -46,7 +46,7 @@ function renderPosts() {
 
 // Function to update pagination controls
 function updatePaginationInfo() {
-    const totalPages = Math.ceil(filteredPosts.length / 10); // Adjust for 10 articles per page
+    const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
     document.getElementById('current-page').textContent = currentPage;
     document.getElementById('total-pages').textContent = totalPages;
 
