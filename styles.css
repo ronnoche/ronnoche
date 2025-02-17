@@ -134,8 +134,19 @@ body {
 }
 
 /* Blog Posts */
-.blog-posts {
-    margin-top: 1.5rem;
+.blog-posts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-posts-header h4 {
+    margin: 0;
+}
+
+.blog-posts-header .filter-controls {
+    display: flex;
+    align-items: center;
 }
 
 .post-item {
@@ -266,43 +277,41 @@ footer {
     text-decoration: underline;
 }
 
-/* Style for unordered list */
 ul {
-    list-style-type: disc; /* Use disc bullets */
-    padding-left: 20px; /* Add some padding to align bullets */
-    margin-bottom: 1rem; /* Add space below the list */
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 1rem;
 }
 
-/* Style for list items */
 li {
-    margin-bottom: 0.5rem; /* Add space between list items */
-    font-weight: 400; /* Ensure consistent font weight */
+    margin-bottom: 0.5rem;
+    font-weight: 400;
 }
 
+/* Post Assets */
 .post-assets {
     display: flex;
-    justify-content: center; /* Center the image horizontally */
-    margin: 2rem 0; /* Add some vertical spacing */
+    justify-content: center;
+    margin: 2rem 0;
 }
 
 .post-assets img {
-    max-width: 100%; /* Ensure the image is responsive */
-    height: auto; /* Maintain the aspect ratio */
-    border-radius: 8px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Filter Controls */
 .filter-controls {
-    margin-bottom: 20px;
+    margin-bottom: 1px;
 }
 
 .tag-filter {
     background-color: #f0f0f0;
     border: 1px solid #ddd;
     border-radius: 15px;
-    padding: 5px 15px;
-    margin: 0 5px 5px 0;
+    padding: 2px 8px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -312,9 +321,8 @@ li {
 }
 
 .tag-filter.active {
-    background-color: #007bff;
+    background-color: #ee777f;
     color: white;
-    border-color: #0056b3;
 }
 
 /* Pagination Controls */
