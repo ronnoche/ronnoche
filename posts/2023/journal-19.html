@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal 19: "I'm Not Supposed to Be Anything." | Ron</title>
+    <link rel="icon" type="image/png" href="../../assets/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header-container"></div>
+        <main class="post-content">
+            <article>
+                <header class="article-header">
+                    <h1>Journal 19: "I'm not supposed to be anything."</h1>
+                    <div class="article-meta">
+                        <time>March 12, 2023</time>
+                        <div class="post-tags">
+                            <span class="post-tag">Reflection</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="article-body">
+                    <p>
+                        "What do you want to be when you grow up?"  
+                        A question asked with innocence, yet one that lingers heavily as the years unfold.
+                    </p>
+
+                    <p>
+                        <em>"How was I supposed to know?"</em>
+                    </p>
+
+                    <p>
+                        <em>"How am I supposed to know?"</em>
+                    </p>
+
+                    <p>
+                        I am not supposed to <strong>be</strong> anything.  
+                        I am not a goal to be reached or a title to be claimed.  
+                        I just want to be — myself.
+                    </p>
+
+                    <p>
+                        But who is that?  
+                        I do not know.  
+                        I still do not know.
+                    </p>
+
+                    <p>
+                        And perhaps that is okay.
+                    </p>
+
+                    <hr style="margin: 3rem 0; border: 0.8px dashed #ddd;">
+
+                    <p style="font-size: 0.7rem;"><em>P.S. This post is for reflection purposes only. If you are experiencing mental health concerns, please consult a professional near you.</em></p>
+                </div>
+            </article>
+        </main>
+
+        <div id="footer-placeholder"></div>
+    </div>
+    <script>
+        // Load header
+        fetch('../../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('../../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="../../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal 18: "Meaning Behind My Pain" | Ron</title>
+    <link rel="icon" type="image/png" href="../../assets/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header-container"></div>
+        <main class="post-content">
+            <article>
+                <header class="article-header">
+                    <h1>Journal 18: "Meaning behind my pain"</h1>
+                    <div class="article-meta">
+                        <time>November 21, 2022</time>
+                        <div class="post-tags">
+                            <span class="post-tag">Reflection</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="article-body">
+                    <p>
+                        I used to search for meaning in my suffering.  
+                        That “one day,” everything will <em>just</em> make sense.  
+                        That my pain would be justified.
+                    </p>
+
+                    <p>
+                        But sometimes, it doesn't.  
+                        Most of the time, it will not.  
+                        And perhaps, it doesn't have to.
+                    </p>
+
+                    <p>
+                        Pain, often, carries no grand reason.  
+                        It simply is.
+                    </p>
+
+                    <p>
+                        I once asked, “Did I suffer meaninglessly?”  
+                        Now, I answer, “I experienced pain.”
+                    </p>
+
+                    <p>
+                        Not everything will have meaning — especially suffering.  
+                        And the desperate search for it often prolongs the ache.
+                    </p>
+
+                    <p>
+                        So, I stopped looking.  
+                        And I started living.
+                    </p>
+
+                    <hr style="margin: 3rem 0; border: 0.8px dashed #ddd;">
+
+                    <p style="font-size: 0.7rem;"><em>P.S. This post is for reflection purposes only. If you are experiencing mental health concerns, please consult a professional near you.</em></p>
+                </div>
+            </article>
+        </main>
+
+        <div id="footer-placeholder"></div>
+    </div>
+    <script>
+        // Load header
+        fetch('../../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('../../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="../../script.js"></script>
+</body>
+</html>

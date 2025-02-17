@@ -1,5 +1,11 @@
 [
     {
+        "title": "Journal 19: i'm not supposed to be anything",
+        "url": "posts/2023/journal-19.html",
+        "date": "2023-03-12",
+        "tags": ["#Journal"]
+    },
+    {
         "title": "Stress pt5: 'I can't afford to rest'",
         "url": "posts/2023/advocacy-stress-pt-5.html",
         "date": "2023-02-08",
@@ -28,6 +34,12 @@
         "url": "posts/2023/advocacy-stress-pt-1.html",
         "date": "2023-01-11",
         "tags": ["#Advocacy"]
+    },
+    {
+        "title": "Journal 18: meaning behind my pain",
+        "url": "posts/2022/journal-18.html",
+        "date": "2022-11-21",
+        "tags": ["#Journal"]
     },
     {
         "title": "Journal 17: everyone has something",
