@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation Journal 6 | Ron</title>
+    <link rel="icon" type="image/png" href="../../assets/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header-container"></div>
+        <main class="post-content">
+            <article>
+                <header class="article-header">
+                    <h1>Meditation Journal 6</h1>
+                    <div class="article-meta">
+                        <time>July 3, 2021</time>
+                        <div class="post-tags">
+                            <span class="post-tag">Journal</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="article-body">
+                    <p>I have to remind myself:<br>
+                        <em>"I shouldn't rush in a year what I will do for the rest of my life."</em></p>
+
+                    <p>What I wish to do for the rest of my life need not be perfected in a single streak. My journey is not a race.</p>
+
+                    <p>If I missed reading for an hour today, it is fine.<br>
+                    If I skipped one set of exercise this week, it is fine.<br>
+                    If I forgot to meditate and journal this morning, it is fine.<br>
+                    If I did not do deep learning for two hours today, it is fine.</p>
+
+                    <p>Missing a day is not failure — it is life unfolding.</p>
+
+                    <p>My habits are not slow to develop. I am simply in a hurry.</p>
+
+                    <p>But why hurry?</p>
+
+                    <p>If this is what I will do for the rest of my life, let me pace myself. Let me enjoy the process, knowing that progress is not lost in a day but built over a lifetime.</p>
+
+                    <p>"I am not slow. I am just in a hurry."</p>
+
+                    <p><strong><em>~ Ron</em></strong></p>
+                </div>
+            </article>
+        </main>
+
+        <div id="footer-placeholder"></div>
+    </div>
+    <script>
+        console.log("Hello")
+        // Load header
+        fetch('../../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('../../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="../../script.js"></script>
+</body>
+</html>

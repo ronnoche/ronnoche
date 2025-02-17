@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation Journal 14 | Ron</title>
+    <link rel="icon" type="image/png" href="../../assets/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header-container"></div>
+        <main class="post-content">
+            <article>
+                <header class="article-header">
+                    <h1>Meditation Journal 14</h1>
+                    <div class="article-meta">
+                        <time>August 19, 2022</time>
+                        <div class="post-tags">
+                            <span class="post-tag">Philosophy</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="article-body">
+                    <p>There are days when life feels heavy. The to-do list is long, and the pressure to keep up can be overwhelming.</p>
+
+                    <p>When I catch myself feeling this way, I pause and ask — <br>
+                    What truly matters right now?</p>
+
+                    <p>Not everything needs my attention immediately.<br>
+                    Not everything deserves my energy.</p>
+
+                    <p>Focusing on what is essential helps clear the noise. It reminds me that I don't have to do it all at once.</p>
+
+                    <p>Letting go of the nonessential brings clarity. It gives me space to breathe.</p>
+
+                    <p>So, when the day feels overwhelming — <em>pause</em>.<br>
+                    Focus on what matters.<br>
+                    Let the rest wait.</p>
+
+                    <p>That's often enough.</p>
+
+                    <p><strong><em>~ Ron</em></strong></p>
+                </div>
+            </article>
+        </main>
+
+        <div id="footer-placeholder"></div>
+    </div>
+    <script>
+        console.log("Hello")
+        // Load header
+        fetch('../../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('../../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="../../script.js"></script>
+</body>
+</html>

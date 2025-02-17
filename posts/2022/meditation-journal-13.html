@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation Journal 13 | Ron</title>
+    <link rel="icon" type="image/png" href="../../assets/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header-container"></div>
+        <main class="post-content">
+            <article>
+                <header class="article-header">
+                    <h1>Meditation Journal 13</h1>
+                    <div class="article-meta">
+                        <time>June 2, 2022</time>
+                        <div class="post-tags">
+                            <span class="post-tag">Journal</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="post-assets">
+                    <img src="../../assets/posts-assets/meditation-journal-13.webp" alt="Meditation Journal 13">
+                </div>
+
+                <div class="article-body">
+                    <p>I think of death <em>a lot.</em><br>I am <em>mindful</em> of His absence.</p>
+
+                    <p>Death's presence is the only <em>certain Truth.</em>I don't need faith nor religion to believe this Truth.</p>
+
+                    <p>Our lives may be built on lies but ends with this Truth, that is Death. Death embraces everyone. We are all equal in His eyes.</p>
+
+                    <p>I strive to live a life on this <strong>one Truth</strong> until the time comes when this <strong>Truth</strong> knocks on my door.</p>
+
+                    <p>Until then, I will build a house with a door for him to knock on and welcome him. Or He welcomes me...</p>
+
+                    <p><em>“Welcome, old friend!”</em></p>
+
+                    <p><strong><em>~ Ron</em></strong></p>
+                </div>
+            </article>
+        </main>
+
+        <div id="footer-placeholder"></div>
+    </div>
+    <script>
+        console.log("Hello")
+        // Load header
+        fetch('../../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('../../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="../../script.js"></script>
+</body>
+</html>

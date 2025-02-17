@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation Journal No. 9 | Ron</title>
+    <link rel="icon" type="image/png" href="../../assets/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header-container"></div>
+        <main class="post-content">
+            <article>
+                <header class="article-header">
+                    <h1>Meditation Journal No. 9</h1>
+                    <div class="article-meta">
+                        <time>May 25, 2022</time>
+                        <div class="post-tags">
+                            <span class="post-tag">Journal</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="post-assets">
+                  <img src="../../assets/posts-assets/meditation-journal-9.webp" alt="Meditation Journal 9">
+                </div>
+
+                <div class="article-body">
+                    <p>The Universe is not made with me in mind. It does not owe me an explanation. It has no obligation to make sense, especially to me.</p>
+
+                    <p>The mere fact that I live my life with hesitations because the universe offers me neither an explanation nor meaning is very egotistical to say the least. As if my living is contingent to meaning.</p>
+
+                    <p>Arrogance urges me to negotiate with the Universe that I have meaning and everything I do has a greater purpose. And if satisfied, I can live my life to the fullest.</p>
+
+                    <p>But why negotiate?</p>
+
+                    <p>Why not accept the meaninglessness the Universe offers <em>and</em> live life to the fullest? That meaning is not paramount to living.</p>
+
+                    <p>This humbles me.</p>
+
+                    <p><strong><em>~ Ron</em></strong></p>
+                </div>
+            </article>
+        </main>
+
+        <div id="footer-placeholder"></div>
+    </div>
+    <script>
+        console.log("Hello")
+        // Load header
+        fetch('../../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('../../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="../../script.js"></script>
+</body>
+</html>

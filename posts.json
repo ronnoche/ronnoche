@@ -1,26 +1,50 @@
 [
     {
-        "title": "Journey Inward",
-        "url": "posts/2020/journey-inward.html",
-        "date": "2020-10-15",
-        "tags": ["Psychology"]
+        "title": "Meditation Journal 14",
+        "url": "posts/2022/meditation-journal-14.html",
+        "date": "2022-08-19",
+        "tags": ["Journal"]
     },
     {
-        "title": "The Idea of Death",
-        "url": "posts/2020/idea-of-death.html",
-        "date": "2020-09-14",
-        "tags": ["Philosophy"]
+        "title": "Meditation Journal 13",
+        "url": "posts/2022/meditation-journal-13.html",
+        "date": "2022-07-02",
+        "tags": ["Journal"]
     },
     {
-        "title": "Stoicism: More than Philosophy",
-        "url": "posts/2020/stocism-more-than-philosophy.html",
-        "date": "2020-06-17",
-        "tags": ["Philosophy"]
+        "title": "Meditation Journal 9",
+        "url": "posts/2022/meditation-journal-9.html",
+        "date": "2022-05-25",
+        "tags": ["Journal"]
     },
     {
-        "title": "Reinventing Self",
-        "url": "posts/2020/reinventing-self.html",
-        "date": "2020-05-31",
-        "tags": ["Philosophy"]
+        "title": "Meditation Journal 8",
+        "url": "posts/2021/meditation-journal-8.html",
+        "date": "2021-12-29",
+        "tags": ["Journal"]
+    },
+    {
+        "title": "Book Review: Atomic Habits",
+        "url": "posts/2021/book-review-atomic-habits.html",
+        "date": "2021-11-17",
+        "tags": ["Book Review"]
+    },
+    {
+        "title": "Meditation Journal 7",
+        "url": "posts/2021/meditation-journal-7.html",
+        "date": "2021-10-10",
+        "tags": ["Journal"]
+    },
+    {
+        "title": "Meditation Journal 6",
+        "url": "posts/2021/meditation-journal-6.html",
+        "date": "2021-07-3",
+        "tags": ["Journal"]
+    },
+    {
+        "title": "Meditation Journal 4",
+        "url": "posts/2021/meditation-journal-4.html",
+        "date": "2021-04-17",
+        "tags": ["Journal"]
     }
 ]
