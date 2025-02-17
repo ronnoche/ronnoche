@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress pt2: "I don't like what I am doing" | Ron</title>
+    <link rel="icon" type="image/png" href="../../assets/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header-container"></div>
+        <main class="post-content">
+            <article>
+                <header class="article-header">
+                    <h1>Stress pt2: "I don't like what I'm doing"</h1>
+                    <div class="article-meta">
+                        <time>January 18, 2023</time>
+                        <div class="post-tags">
+                            <span class="post-tag">Advocacy</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="article-body">
+                    <p>
+                        Another common cause of work-related stress is the feeling of being stuck in something we don't like.  
+                        <em>"I don't like what I'm doing."</em>
+                    </p>
+
+                    <p>
+                        This is often more complex because there are deeper reasons behind it.  
+                        Maybe your parents pressured you into your college course.  
+                        Maybe you took a job because you needed to provide for your family.  
+                        Maybe circumstances led you to a path you would not have chosen for yourself.
+                    </p>
+
+                    <p>
+                        Regardless of the reason, there's a common thread:  
+                        <em>It's hard to fully commit when it wasn't entirely your decision.</em>
+                    </p>
+
+                    <h3>What Can We Do?</h3>
+                    <p>
+                        There's no one-size-fits-all solution, but one approach that helps many is this:  
+                        <strong>Pursue a passion project.</strong>
+                    </p>
+
+                    <p>
+                        A passion project is something you choose for yourself.  
+                        It gives you a sense of control, ownership, and autonomy—reminding you that not everything is dictated by circumstances.
+                    </p>
+
+                    <h3>Examples:</h3>
+                    <ul>
+                        <li>If you're working a job to support your family, try starting a side project that excites you.</li>
+                        <li>If you're a student in a course you don't like, consider joining an organization or starting a small creative project.</li>
+                    </ul>
+
+                    <p>
+                        Passion projects can spill over into other areas of life.  
+                        They ignite curiosity, creativity, and sometimes, lead to unexpected opportunities.
+                    </p>
+
+                    <p>
+                        When we take action on what we care about, we slowly regain our sense of direction.  
+                        It reminds us: <em>"This is my choice."</em>
+                    </p>
+
+                    <hr style="margin: 3rem 0; border: 0.8px dashed #ddd;">
+
+                    <p style="font-size: 0.7rem;"><em>P.S. This post is for educational purposes only. If you are experiencing mental health concerns, please consult a professional near you.</em></p>
+                </div>
+            </article>
+        </main>
+
+        <div id="footer-placeholder"></div>
+    </div>
+    <script>
+        // Load header
+        fetch('../../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('../../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="../../script.js"></script>
+</body>
+</html>

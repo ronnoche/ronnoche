@@ -16,8 +16,8 @@ function renderPosts() {
     postList.innerHTML = '';
 
     // Calculate pagination
-    const startIndex = (currentPage - 1) * 10; // Show max of 10 articles
-    const endIndex = startIndex + 10;
+    const startIndex = (currentPage - 1) * 12; // Show max of 10 articles
+    const endIndex = startIndex + 12;
     const postsToShow = filteredPosts.slice(startIndex, endIndex);
 
     // Render posts
