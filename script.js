@@ -16,8 +16,8 @@ function renderPosts() {
     postList.innerHTML = '';
 
     // Calculate pagination
-    const startIndex = (currentPage - 1) * postsPerPage;
-    const endIndex = startIndex + postsPerPage;
+    const startIndex = (currentPage - 1) * 10; // Show max of 10 articles
+    const endIndex = startIndex + 10;
     const postsToShow = filteredPosts.slice(startIndex, endIndex);
 
     // Render posts
@@ -46,12 +46,12 @@ function renderPosts() {
 
 // Function to update pagination controls
 function updatePaginationInfo() {
-    const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
+    const totalPages = Math.ceil(filteredPosts.length / 10); // Adjust for 10 articles per page
     document.getElementById('current-page').textContent = currentPage;
     document.getElementById('total-pages').textContent = totalPages;
 
     // Enable/disable pagination buttons
-    document.getElementById('prev-page').disabled = currentPage === 1;
+    document.getElementById('prev-page').style.display = currentPage === 1 ? 'none' : 'inline-block';
     document.getElementById('next-page').disabled = currentPage === totalPages;
 }
 
@@ -85,11 +85,8 @@ function renderTagFilters(posts) {
         button.textContent = tag;
         button.classList.add('tag-filter');
         button.addEventListener('click', () => {
-            if (selectedTags.has(tag)) {
-                selectedTags.delete(tag);
-            } else {
-                selectedTags.add(tag);
-            }
+            selectedTags.clear();
+            selectedTags.add(tag);
             updateActiveFilters();
             filterPosts();
         });

@@ -325,6 +325,27 @@ li {
     color: white;
 }
 
+.tag-filter {
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: #777;
+    position: relative;
+    margin-left: 0.8rem;
+    font-style: italic;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tag-filter:hover {
+    background-color: #e0e0e0;
+}
+
+.tag-filter.active {
+    background-color: #ee777f;
+    color: white;
+}
+
 /* Pagination Controls */
 .pagination-controls {
     display: flex;
