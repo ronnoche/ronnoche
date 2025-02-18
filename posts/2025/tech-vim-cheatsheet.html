@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vim Basics | Ron</title>
+    <link rel="icon" type="image/png" href="../../assets/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header-container"></div>
+        <main class="post-content">
+            <article>
+                <header class="article-header">
+                    <h1>My Vim Motions Cheatsheet</h1>
+                    <div class="article-meta">
+                        <time>January 12, 2025</time>
+                        <div class="post-tags">
+                            <span class="post-tag">Tech</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="article-body">
+                    <p>
+                        Mastering Vim motions is fundamental to becoming efficient in navigating and editing text. Motions define how you move through text, and when combined with commands like <code>d</code> (delete), <code>c</code> (change), or <code>y</code> (yank), they enable you to perform precise and powerful edits with minimal keystrokes.
+                    </p>
+
+                    <p>
+                        This is my personal cheatsheet of Vim motions based on what I usually use on a daily basis:
+                    </p>
+
+                    <h2>Basic Motions</h2>
+                    <ul>
+                        <li><code>h</code> – Move left</li>
+                        <li><code>l</code> – Move right</li>
+                        <li><code>j</code> – Move down</li>
+                        <li><code>k</code> – Move up</li>
+                        <li><code>0</code> – Move to the beginning of the line</li>
+                        <li><code>^</code> – Move to the first non-blank character of the line</li>
+                        <li><code>$</code> – Move to the end of the line</li>
+                        <li><code>gg</code> – Move to the start of the file</li>
+                        <li><code>G</code> – Move to the end of the file</li>
+                        <li><code>:n</code> – Move to line <code>n</code> (e.g., <code>:42</code> moves to line 42)</li>
+                    </ul>
+
+                    <h2>Word Motions</h2>
+                    <ul>
+                        <li><code>w</code> – Move to the start of the next word</li>
+                        <li><code>W</code> – Move to the start of the next WORD (ignores punctuation)</li>
+                        <li><code>e</code> – Move to the end of the current/next word</li>
+                        <li><code>E</code> – Move to the end of the current/next WORD</li>
+                        <li><code>b</code> – Move to the beginning of the previous word</li>
+                        <li><code>B</code> – Move to the beginning of the previous WORD</li>
+                    </ul>
+
+                    <h2>Paragraph Motions</h2>
+                    <ul>
+                        <li><code>{</code> – Move to the beginning of the current/previous paragraph</li>
+                        <li><code>}</code> – Move to the beginning of the next paragraph</li>
+                    </ul>
+
+                    <h2>Search Motions</h2>
+                    <ul>
+                        <li><code>/pattern</code> – Search forward</li>
+                        <li><code>?pattern</code> – Search backward</li>
+                        <li><code>n</code> – Repeat last search (same direction)</li>
+                        <li><code>N</code> – Repeat last search (opposite direction)</li>
+                        <li><code>*</code> – Search forward for word under cursor</li>
+                        <li><code>#</code> – Search backward for word under cursor</li>
+                    </ul>
+
+                    <h2>Character Search Motions</h2>
+                    <ul>
+                        <li><code>f{char}</code> - Move forward to <code>{char}</code></li>
+                        <li><code>F{char}</code> - Move backward to <code>{char}</code></li>
+                        <li><code>t{char}</code> - Move forward before <code>{char}</code></li>
+                        <li><code>T{char}</code> - Move backward after <code>{char}</code></li>
+                        <li><code>;</code> - Repeat last character search</li>
+                        <li><code>,</code> - Repeat last character search in the opposite direction</li>
+                    </ul>
+
+                    <h2>Text Objects</h2>
+                    <p>Text objects allow you to select and manipulate blocks of text efficiently:</p>
+                    <ul>
+                        <li><code>iw</code> - Inner word</li>
+                        <li><code>aw</code> - A word (including trailing space)</li>
+                        <li><code>i'</code>, <code>a'</code> - Inside / Around single quotes</li>
+                        <li><code>i"</code>, <code>a"</code> - Inside / Around double quotes</li>
+                        <li><code>i(</code>, <code>a(</code> - Inside / Around parentheses</li>
+                        <li>...and many more for brackets, braces, and HTML tags.</li>
+                    </ul>
+
+                    <h2>Combining Motions with Commands</h2>
+                    <p>Combine motions with commands for efficient editing:</p>
+                    <ul>
+                        <li><code>dw</code> - Delete to the start of the next word</li>
+                        <li><code>d$</code> - Delete to the end of the line</li>
+                        <li><code>ciw</code> - Change inside the current word</li>
+                        <li><code>yip</code> - Yank inner paragraph</li>
+                    </ul>
+
+                    <p>Need to put this cheat sheet in a more accessible place.</p>
+
+                    
+                </div>
+            </article>
+        </main>
+
+        <hr style="margin: 3rem 0; border: 0.8px dashed #ddd;">
+
+        <div id="footer-placeholder"></div>
+    </div>
+    <script>
+        fetch('../../header.html').then(response => response.text()).then(data => { document.getElementById('header-container').innerHTML = data; });
+        fetch('../../footer.html').then(response => response.text()).then(data => { document.getElementById('footer-placeholder').innerHTML = data; });
+    </script>
+    <script src="../../script.js"></script>
+</body>
+</html>
