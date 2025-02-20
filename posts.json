@@ -1,8 +1,14 @@
 [
     {
+        "title": "Rails Data Model Table vs Enum",
+        "url": "posts/2024/tech-rot-data-model-table.html",
+        "date": "2024-01-24",
+        "tags": ["#Tech"]
+    },
+    {
         "title": "My Vim Motions Cheatsheet",
-        "url": "posts/2025/tech-vim-cheatsheet.html",
-        "date": "2025-01-12",
+        "url": "posts/2024/tech-vim-cheatsheet.html",
+        "date": "2024-01-18",
         "tags": ["#Tech"]
     },
     {

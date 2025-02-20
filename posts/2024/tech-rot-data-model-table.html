@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule of Thumb: Model Data Table | Ron</title>
+    <link rel="icon" type="image/png" href="../../assets/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header-container"></div>
+        <main class="post-content">
+            <article>
+                <header class="article-header">
+                    <h1>Rule of Thumb: Model Data Table</h1>
+                    <div class="article-meta">
+                        <time>January 24, 2024</time>
+                        <div class="post-tags">
+                            <span class="post-tag">Tech</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="article-body">
+                    <p> 
+                      I was building my side-project called "Moneyger", and I was trying to figure out how to model the data. And I got into this decision of whether a concept needs a table or not.
+                      <br>
+                      <strong> "When do we need to create a table? Or when do we need to create a enum?"</strong>
+                    </p>
+                    <p>
+                        I came up of a solid rule of thumb when designing data models in Rails (or any app):  
+                        <strong>If a business concept needs CRUD, it likely needs a data table.</strong>
+                    </p>
+
+                    <p>
+                        This principle works well in most cases, especially when you're deciding whether a feature requires a dedicated database table.  
+                        But like any rule of thumb, there are exceptions and nuances worth understanding.
+                    </p>
+
+                    <h2>Why This Rule Works (Most of the Time)</h2>
+
+                    <p>If you need to do any of the following, you probably need a table:</p>
+                    <ul>
+                        <li><strong>Create:</strong> Users create instances of something (e.g., goals, transactions).</li>
+                        <li><strong>Read:</strong> You need to display this concept somewhere (e.g., “Show all bucket targets”).</li>
+                        <li><strong>Update:</strong> Users need to modify this thing (e.g., adjust a goal amount).</li>
+                        <li><strong>Delete:</strong> Users may remove or cancel this thing (e.g., remove a funding entry).</li>
+                    </ul>
+
+                    <h2>When CRUD ≠ Data Table</h2>
+
+                    <p>There are situations where something feels like CRUD but doesn't need a table:</p>
+
+                    <h3>1. Non-Persistent or Computed Concepts</h3>
+                    <p>These are values derived from other data, recalculated on the fly:</p>
+                    <ul>
+                        <li><strong>Monthly Savings Progress:</strong> Computed from funds vs. targets (No Table).</li>
+                        <li><strong>Current Budget Status:</strong> Derived from balances and contributions (No Table).</li>
+                        <li><strong>Suggested Monthly Contribution:</strong> Calculated based on goals (No Table).</li>
+                    </ul>
+
+                    <h3>2. Configuration-Like Concepts (Fixed Values)</h3>
+                    <p>These are options the user selects, but they don’t change over time:</p>
+                    <ul>
+                        <li><strong>Cadence Options:</strong> Weekly, Monthly, Yearly (Use Enum).</li>
+                        <li><strong>Interval Units:</strong> Day, Week, Month, Year (Use Enum).</li>
+                    </ul>
+
+                    <h2>A Simple Decision Framework</h2>
+                    <p>When in doubt, ask these three questions:</p>
+                    <ul>
+                        <li><strong>Will the user create, update, or delete this?</strong><br>→ <strong>Yes = Table</strong> / <strong>No = Enum, Config, or Calculation</strong></li>
+                        <li><strong>Does this need to persist between sessions?</strong><br>→ <strong>Yes = Table</strong> / <strong>No = Computed on the fly</strong></li>
+                        <li><strong>Could this change over time, or is it fixed?</strong><br>→ <strong>Change = Table</strong> / <strong>Fixed = Enum, Constant</strong></li>
+                    </ul>
+
+                    <h2>Applying This to Moneyger App (Example)</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Business Concept</th>
+                                <th>Needs a Table?</th>
+                                <th>Reason</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bucket List (Goal’s Name)</td>
+                                <td>✅ Yes</td>
+                                <td>Users create, edit, delete goals.</td>
+                            </tr>
+                            <tr>
+                                <td>Bucket Target (Savings Goal)</td>
+                                <td>✅ Yes</td>
+                                <td>Users define and adjust targets.</td>
+                            </tr>
+                            <tr>
+                                <td>Bucket Fund (Assigned Money)</td>
+                                <td>✅ Yes</td>
+                                <td>Tracks user contributions.</td>
+                            </tr>
+                            <tr>
+                                <td>Cadence (e.g., Weekly, Monthly)</td>
+                                <td>❌ No</td>
+                                <td>Enum, fixed set of options.</td>
+                            </tr>
+                            <tr>
+                                <td>Current Available Balance</td>
+                                <td>❌ No</td>
+                                <td>Derived from account + funds.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2>Final Rule of Thumb (Refined)</h2>
+                    <p>
+                        💡 <strong>If a business concept involves user-driven creation, editing, or deletion, it likely needs a data table.</strong><br>
+                        If it’s <em>derived, fixed, or calculated</em>, it probably doesn’t.
+                    </p>
+
+                    <p>Use this as a guiding principle in your Rails models or any application architecture.</p>
+
+                    <hr style="margin: 3rem 0; border: 0.8px dashed #ddd;">
+
+                    <p style="font-size: 0.7rem;"><em>P.S. Modeling data is a skill you refine over time. Keep asking questions, and you’ll develop better instincts.</em></p>
+                </div>
+            </article>
+        </main>
+
+        <div id="footer-placeholder"></div>
+    </div>
+    <script>
+        // Load header
+        fetch('../../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('../../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="../../script.js"></script>
+</body>
+</html>
