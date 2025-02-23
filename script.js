@@ -121,7 +121,7 @@ function filterPosts() {
 }
 
 // Initialize
-fetch('/posts/posts.json')
+fetch('https://ronnoche.github.io/posts/posts.json')
     .then(response => response.json())
     .then(posts => {
         // Sort posts by date (latest first)
